@@ -1,0 +1,9 @@
+{
+  "port": 3100,
+  "mongoose": {
+    "uri": "mongodb://localhost/testdb"
+  },
+  "session": {
+    "secret": "gdjjjcijf"
+  }
+}

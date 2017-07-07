@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content">
+            {{#each docs}}
+                <div class="info_film">
+                    <img src="{{this.img}}">
+                    <p class="name">{{this.name}}</p>
+                    <p>{{this.description}}</p>
+                    <div class="button"><a href="">{{this.view}}</a></div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
