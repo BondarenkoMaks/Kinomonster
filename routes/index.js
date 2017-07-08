@@ -3,6 +3,7 @@ const router = express.Router();
 const Film = require("../db").Film;
 
 const ensureAuthenticated = (req, res, next) => {
+    debugger;
     if (req.isAuthenticated()) {
         if (req.url == "/") {
             let cookieLang = req.cookies.lang || "En";
@@ -45,6 +46,8 @@ router.get("/:lang", ensureAuthenticated, (req, res) => {
 
     });
 });
-
+router.get("/", ensureAuthenticated, (req, res) => {
+    res.render("index");
+});
 
 module.exports = router;
